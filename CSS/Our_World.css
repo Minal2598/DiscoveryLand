@@ -1,0 +1,236 @@
+* {
+    box-sizing: border-box;
+}
+
+.headcontainer {
+    height: 40vh;
+    width: 100vw;
+    background-color: black;
+}
+
+.headerpart {
+    display: flex;
+    width: 100%;
+    /* border: 2px solid red;  */
+    justify-content: space-evenly;
+    color: white;
+    position: relative;
+    top: 20%;
+}
+
+.headerright {
+    display: flex;
+    /*border: 2px solid black;*/
+    flex-direction: row;
+}
+
+
+
+.headerleft{
+    width: 15%;
+    height: 15%;
+}
+
+.item {
+    /* display: flex; */
+    font-size: 25px;
+    margin-left: 45px;
+}
+
+
+/* secondsection */
+
+.image-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100vw;
+    height: auto;
+    background-color: black;
+}
+
+/* .image-section{
+    display: flex;
+    width: 100%;
+} */
+
+.img-card {
+    display: flex;
+    width: 24.5%;
+    flex-direction: column;
+    /* justify-content: space-evenly; */
+    height: 360px;
+    padding: 1.3%;
+    color: white;
+    object-fit: cover;
+}
+
+image {
+    height: 85%;
+}
+
+.imageinfo {
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
+    padding-bottom: 60px;
+}
+
+.card-text {
+    font-size: 1.5em;
+}
+
+.card-text2 {
+    opacity: 0.5;
+    font-size: 0.9em;
+}
+
+
+/* footer */
+
+.footercontainer {
+    display: flex;
+    justify-content: space-around;
+    width: 100vw;
+    height: 65vh;
+    /* border: 2px solid white; */
+    background-color: #161f1e;
+    color: white;
+}
+.footersection2{
+    display: flex;
+    flex-direction: colum;
+}
+.footerlist {
+    position: relative;
+    font-size: 20px;
+    margin-top: 8%;
+}
+
+.footerimage {
+    height: 80px;
+    width: 65px;
+}
+
+.footerlogo {
+    margin-top: 8%;
+}
+
+@media only screen and (min-width: 700px) and (max-width: 1100px) {
+    .headerright {
+        display: none;
+    }
+    /* .nevigationleft{
+       display: flex;
+       flex-direction: column;
+       align-self: flex-start;
+       border: 4px white solid;
+       }  */
+    .headerpart {
+        justify-content: start;
+        padding-left: 10%;
+    }
+    .headcontainer {
+        height: 20vh;
+        width: 100vw;
+        background-color: black;
+    }
+    /* image-section */
+    .img-card {
+        width: 33%;
+    }
+
+    
+
+}
+
+
+
+@media only screen and (min-width: 320px) and (max-width: 700px) {
+    /* header section */
+    .headerright {
+        display: none;
+     }
+    .headerpart {
+        justify-content: start;
+        padding-left: 10%;
+    }
+    .headcontainer {
+        height: 40vh;
+        width: 100vw;     
+    }
+    .image-container {
+        /* border: blue 4px solid; */
+        width: 100vw;
+        /* height: 625vw; */
+
+        background-color: black;
+    }
+    
+     /*image-section */
+    .img-card {
+        /* border: solid 4px green; */
+        width: 50%;
+        height: 200px;
+        }
+
+        .image {
+            /* border: 4px solid white; */
+            height: 60%;
+        }
+        
+
+        .footercontainer {
+            display: block;
+            padding: 6%;
+            position:static;
+            justify-content: start;
+            /* border: 4px red solid; */
+            height: 70vh;
+        }
+
+        .footerlogo {
+            display: block;
+            width: 100%;
+            /* border: 4px solid blue; */
+        }        
+        
+        .footerlist {
+            font-size: 20px;
+            margin-top: 8%;
+        }
+        
+        #footer3{
+            display: inline-block;
+            width: 50%;
+        }
+        #footer4{
+            display: inline-block;
+        }
+        
+}
+
+
+/* 
+.footercontainer {
+    display: flex;
+    justify-content: space-around;
+    width: 100vw;
+    height: 65vh;
+    border: 2px solid white;
+    background-color: #161f1e;
+    color: white;
+}
+}
+.footermenu {
+    position: relative;
+    font-size: 20px;
+    margin-top: 8%;
+}
+.footerimage {
+    height: 80px;
+    width: 65px;
+}
+.footerlogo {
+    margin-top: 8%;
+}
